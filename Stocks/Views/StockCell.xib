@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stockCell" rowHeight="60" id="jR7-qZ-kKp" customClass="StockCell" customModule="Stocks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jR7-qZ-kKp" id="0Bp-aR-NVP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHo-tC-k5Z">
+                        <rect key="frame" x="16" y="12" width="149" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="149" id="fGF-eH-a9e"/>
+                            <constraint firstAttribute="height" constant="21" id="jxL-AU-8bb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forward-100" translatesAutoresizingMaskIntoConstraints="NO" id="1rk-tI-ohV">
+                        <rect key="frame" x="286" y="13" width="20" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3db-jY-HqG"/>
+                            <constraint firstAttribute="height" constant="19" id="IUN-Bj-CAf"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="d3u-1j-i5X">
+                        <rect key="frame" x="20" y="36" width="300" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA Creativity Global gggg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-Fo-bsi">
+                                <rect key="frame" x="0.0" y="3" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YHY-9f-jl1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="frg-R6-Cre">
+                                <rect key="frame" x="230" y="3" width="70" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn1-kn-5lg">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="0qa-Hn-1yH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woC-XE-sK8">
+                                        <rect key="frame" x="40" y="0.0" width="30" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="GM9-Bj-Viu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.014407588169999999" green="0.024891741570000001" blue="0.058417953549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="d3u-1j-i5X" firstAttribute="leading" secondItem="0Bp-aR-NVP" secondAttribute="leading" constant="20" id="1hU-Rb-lbG"/>
+                    <constraint firstItem="1rk-tI-ohV" firstAttribute="top" secondItem="0Bp-aR-NVP" secondAttribute="topMargin" constant="2" id="GGi-1d-T98"/>
+                    <constraint firstItem="bHo-tC-k5Z" firstAttribute="top" secondItem="0Bp-aR-NVP" secondAttribute="topMargin" constant="1" id="VYz-yg-wdn"/>
+                    <constraint firstItem="d3u-1j-i5X" firstAttribute="top" secondItem="bHo-tC-k5Z" secondAttribute="bottom" constant="3" id="YhQ-zb-EQH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1rk-tI-ohV" secondAttribute="trailing" constant="-2" id="gv1-lQ-8Db"/>
+                    <constraint firstAttribute="trailing" secondItem="d3u-1j-i5X" secondAttribute="trailing" id="hNw-Vm-KVb"/>
+                    <constraint firstAttribute="bottom" secondItem="d3u-1j-i5X" secondAttribute="bottom" id="hRY-nR-qWL"/>
+                    <constraint firstItem="bHo-tC-k5Z" firstAttribute="leading" secondItem="0Bp-aR-NVP" secondAttribute="leadingMargin" id="scn-wl-3I9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="dPe-Fo-bsi" id="KMa-b3-HYt"/>
+                <outlet property="percentageChange" destination="woC-XE-sK8" id="kkv-oA-Nrt"/>
+                <outlet property="price" destination="kn1-kn-5lg" id="EZF-yX-OEp"/>
+                <outlet property="symbol" destination="bHo-tC-k5Z" id="ejB-AF-khx"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Forward-100" width="50" height="50"/>
+    </resources>
+</document>
